@@ -1,0 +1,4 @@
+system,accuracy,macro_f1,training_examples,evaluation_examples
+majority_baseline,0.1300,0.0209,0,200
+tfidf_logistic_regression,0.3350,0.2854,549,200
+current_agent_intent,0.3350,0.2854,549,200
