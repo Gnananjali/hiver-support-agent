@@ -39,7 +39,7 @@ The selected brand is **SpotifyCares**.
 
 The raw dataset contains tweets and reply relationships rather than ready-made customer-support pairs.
 
-The project reconstructs customer â†’ support interactions using:
+The project reconstructs customer -> support interactions using:
 
 - `in_response_to_tweet_id`
 - `response_tweet_id`
@@ -248,11 +248,11 @@ Its additional value comes from combining classification with historical retriev
 
 The main observed classification failures were:
 
-1. `billing_payment` â†’ `other_unclear`
-2. `download_offline` â†’ `app_technical_issue`
-3. `playback_issue` â†’ `content_library`
-4. `premium_subscription` â†’ `other_unclear`
-5. `student_plan` â†’ several overlapping intents
+1. `billing_payment` -> `other_unclear`
+2. `download_offline` -> `app_technical_issue`
+3. `playback_issue` -> `content_library`
+4. `premium_subscription` -> `other_unclear`
+5. `student_plan` -> several overlapping intents
 
 The failures show that many SpotifyCares issues share vocabulary.
 
@@ -316,28 +316,28 @@ Allow multiple intents or explicitly detect multi-issue messages before selectin
 
 ```text
 hiver-support-agent/
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ raw/
-â”‚   â””â”€â”€ processed/
-â”œâ”€â”€ evaluation/
-â”‚   â”œâ”€â”€ results/
-â”‚   â”œâ”€â”€ golden_set.csv
-â”‚   â”œâ”€â”€ training_clean.csv
-â”‚   â””â”€â”€ reply_rubric.md
-â”œâ”€â”€ report/
-â”‚   â”œâ”€â”€ failure_analysis.md
-â”‚   â””â”€â”€ report.md
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ agent.py
-â”‚   â”œâ”€â”€ classifier.py
-â”‚   â”œâ”€â”€ retrieval.py
-â”‚   â”œâ”€â”€ escalation.py
-â”‚   â”œâ”€â”€ reply.py
-â”‚   â””â”€â”€ evaluation / analysis scripts
-â”œâ”€â”€ decision_log.md
-â”œâ”€â”€ requirements.txt
-â”œâ”€â”€ .env.example
-â””â”€â”€ README.md
+|-- data/
+|   |-- raw/
+|   `-- processed/
+|-- evaluation/
+|   |-- results/
+|   |-- golden_set.csv
+|   |-- training_clean.csv
+|   `-- reply_rubric.md
+|-- report/
+|   |-- failure_analysis.md
+|   `-- report.md
+|-- src/
+|   |-- agent.py
+|   |-- classifier.py
+|   |-- retrieval.py
+|   |-- escalation.py
+|   |-- reply.py
+|   `-- evaluation / analysis scripts
+|-- decision_log.md
+|-- requirements.txt
+|-- .env.example
+`-- README.md
 
 ## 14. Reproducibility
 
@@ -383,7 +383,7 @@ The headline intent results can be reproduced from the included processed evalua
 
 The project follows a simple principle:
 
-**Build â†’ Measure â†’ Explain**
+**Build -> Measure -> Explain**
 
 Rather than optimizing for system complexity, the implementation focuses on:
 
