@@ -73,7 +73,7 @@ Eleven intents were defined from the observed SpotifyCares support data:
 - `other_unclear` - Outside the defined categories or insufficient information
 
 Messages were labeled according to the **primary customer problem**, rather than simply matching keywords.
----
+
 
 ## 5. Evaluation Data
 
@@ -339,6 +339,7 @@ hiver-support-agent/
 |-- .env.example
 `-- README.md
 
+```
 ## 14. Reproducibility
 
 Create and activate a virtual environment:
